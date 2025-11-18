@@ -1,5 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -8,14 +13,15 @@ export default function Home() {
         src="/profile.jpg"
         width={150}
         height={150}
-        alt="Profile"
+        alt="Profile Image"
         className="rounded-full shadow-lg"
       />
-      <h1 className="text-4xl font-bold mt-6">Hi, I’m Nitesh Kumar 👋</h1>
-      <p className="text-gray-500 mt-3 max-w-xl">
-        A passionate Frontend Developer specializing in React, Next.js, and
-        modern web technologies.
-      </p>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+
       <div className="mt-6 space-x-4">
         <Link
           href="/projects"
