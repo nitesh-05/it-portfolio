@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function Contact() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen text-center p-8">
       <Image
